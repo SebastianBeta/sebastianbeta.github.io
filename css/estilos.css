@@ -639,7 +639,7 @@ hr{
     .nav__link--footer{
         width: 100%;
         justify-content: space-evenly;
-        margin: 0;
+        margin: 10px;
     }
 
     .footer__form{
@@ -701,6 +701,7 @@ hr{
     }
 
     .footer__title{
+        padding-left: 35px;
         justify-self: start;
         margin-bottom: 15px;
     }
@@ -710,7 +711,10 @@ hr{
     }
 
     .nav__link--footer{
+        padding-left: 20px;
+        padding-right: 20px;
         justify-content: space-between;
+        
     }
 
     .footer__inputs{
