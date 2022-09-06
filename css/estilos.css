@@ -27,7 +27,26 @@ body {
     grid-template-rows: 230px 1fr;
     color: #fff;
 }
+.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(111% + 1.3px);
+    height: 24px;
+}
+
+.curve .shape-fill {
+    fill: #F7F6F2;
+}
 .hero::before {
     content: "";
     position:fixed;
@@ -251,18 +270,16 @@ hr{
 /* Knowledge */
 
 .knowledge {
-    padding-top: 2%;
-    background-color: #232323;
+   padding-top: 2%;
+    background-color:#F7F6F2;
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
 
-
 .knowledege__texts{
 
-    color: #fff;
-
+    color:#001A49;
 
 }
 
@@ -281,6 +298,7 @@ hr{
 .knowledge__img{
     width: 100%;
     display: block;
+    
     
     
     
@@ -304,10 +322,17 @@ hr{
 /* Testimony */
 
 .testimony{
-    background-color: #39A9CB;
+    background-color:#F7F6F2;
+    height: 500px;
+    padding-top: 0px;
+    margin-top: 0px;
+
 }
 
 .testimony__container{
+    padding-top: 0px;
+    padding-bottom: 450px;
+    height: 700px;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
@@ -398,6 +423,7 @@ hr{
     cursor: pointer;
     color: var(--color-title);
     justify-content: space-between;
+    
 }
 
 .questions__arrow{
@@ -437,9 +463,26 @@ hr{
 
 
 .footer{
-    background-color:#232323;
+    background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+    background-size: 500%;
+    animation: fanimado 12s infinite;
 
 }
+
+@keyframes fanimado {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    0%{
+        background-position: 0% 50%;
+    }
+             
+
+}
+
 
 .footer_form{
     margin-top:0;
@@ -532,6 +575,7 @@ hr{
 }
 
 .footer__copyright{
+    padding-top: 15px;
     font-weight: 300;
 }
 
@@ -553,6 +597,10 @@ hr{
     margin-left: 0%;
     cursor: pointer;
 
+}
+
+.vision__footer{
+    display:flex;
 }
 
 /* Button WS */
