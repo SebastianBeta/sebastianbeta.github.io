@@ -54,7 +54,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #f6ff00fd 0%, #98b216b8 100%), url('../images/amarillo_fondo.jpg');
+    background-image: linear-gradient(180deg, #f6ff00fd 0%, #98b216b8 100%), url('../images/atleta-linea-salida-estadio.jpg');
     background-size:cover;
     background-position-x: center;
     /*clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);*/
@@ -586,7 +586,7 @@ hr{
 
 .footer__img{
     width: 45px;
-    background-color:#2940d3;
+    background-color:#ff0000d3;
     border-radius: 25%;
 }
 
